@@ -11,7 +11,7 @@ namespace Entities
     {
         public int EmployeeId { get; set; }
         public string Name { get; set; }
-        public int SuperVisorId { get; set; }
-        public bool IsSuperVisor { get; set; }
+        public int ParentId { get; set; }
+        public List<Employee> SubChild { get; set; }
     }
 }
